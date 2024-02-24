@@ -1,0 +1,339 @@
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	margin:0 0px;
+	width:12.5555%!important;
+	height:auto;
+	max-width:434px;
+	/*max-height:525px;*/
+	border:0px solid #ccc;
+	display:flex;
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+#owl-demo, #owl-demo-women{
+	margin:0 auto 4%;
+}
+
+#owl-demo .item{
+	margin: 0 3px;
+	width:100%;
+	height:auto;
+	max-width:434px;
+	/*max-height:525px;*/
+	background:#fff;
+	
+	/*text-align:center;*/
+}
+
+#owl-demo .item:nth-child(1){
+	margin-left:0;
+}
+
+#owl-demo .item:nth-child(4){
+	margin-right:0;
+}
+
+#owl-demo .item img{
+	display: block;
+	margin:0 auto 6%;	/*margin:0 0 40px;*/
+	width:100%;
+	height:auto;
+	max-width:425px;
+	max-height:525px;
+	border:1px solid #ccc;
+	position:relative;
+	z-index:1;
+}
+
+#owl-demo .item span{
+	/*padding: 0px 0 10px;*/
+  	font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+  	font-size: 17px;
+  	font-weight: bold;
+  	color: #000;
+	height:100%;
+  	display: block;
+}
+
+#owl-demo .item span.offer{
+	padding:2% 8%;
+	height:auto;
+	background:#000;
+	color:#fff;
+	font-size:14px;
+	font-weight:600;
+	text-transform:uppercase;
+	display:inline-block;
+	position:absolute;
+	top:20px;
+	left:4px;
+	z-index:2;
+}
+
+#owl-demo .item span.prod_name{
+	margin:0 0 3%;	/*margin:0 0 20px;*/
+	height:auto;
+	font-size:20px;
+	font-weight:bold;
+	color:#999;
+	text-transform:uppercase;
+	display:block;
+}
+
+#owl-demo .item span.desc{
+	margin:0 0 3%;	/*margin:0 0 20px;*/
+	height:auto;
+	font-size:16px;
+	font-weight:normal;
+	color:#000;
+	text-transform:none;
+	display:block;
+}
+
+#owl-demo .item span.price{
+	margin:0;	/*margin:0 0 20px;*/
+	height:auto;
+	font-size:22px;
+	font-weight:bold;
+	color:#e76332;
+	text-transform:uppercase;
+	display:block;
+}
+
+
+
+
+
+/******************************* WOMEN ************************************************/
+@charset "utf-8";
+/* CSS Document */
+
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel_women .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel_women{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel_women .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel_women .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel_women .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel_women .owl-item{
+	margin:0 0px;
+	width:12.5555%!important;
+	height:auto;
+	max-width:434px;
+	/*max-height:525px;*/
+	border:0px solid #ccc;
+	display:flex;
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel_women  .owl-wrapper,
+.owl-carousel_women  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+#owl-demo-women .item{
+	margin: 0 3px;
+	width:100%;
+	height:auto;
+	max-width:434px;
+	/*max-height:525px;*/
+	background:#fff;
+	
+	/*text-align:center;*/
+}
+
+#owl-demo-women .item:nth-child(1){
+	margin-left:0;
+}
+
+#owl-demo-women .item:nth-child(4){
+	margin-right:0;
+}
+
+#owl-demo-women .item img{
+	display: block;
+	margin:0 auto 6%;	/*margin:0 0 40px;*/
+	width:100%;
+	height:auto;
+	max-width:425px;
+	max-height:525px;
+	border:1px solid #ccc;
+	position:relative;
+	z-index:1;
+}
+
+#owl-demo-women .item span{
+	/*padding: 0px 0 10px;*/
+  	font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+  	font-size: 17px;
+  	font-weight: bold;
+  	color: #000;
+	height:100%;
+  	display: block;
+}
+
+#owl-demo-women .item span.offer{
+	padding:2% 8%;
+	height:auto;
+	background:#000;
+	color:#fff;
+	font-size:14px;
+	font-weight:600;
+	text-transform:uppercase;
+	display:inline-block;
+	position:absolute;
+	top:20px;
+	left:4px;
+	z-index:2;
+}
+
+#owl-demo-women .item span.prod_name{
+	margin:0 0 3%;	/*margin:0 0 20px;*/
+	height:auto;
+	font-size:20px;
+	font-weight:bold;
+	color:#999;
+	text-transform:uppercase;
+	display:block;
+}
+
+#owl-demo-women .item span.desc{
+	margin:0 0 3%;	/*margin:0 0 20px;*/
+	height:auto;
+	font-size:16px;
+	font-weight:normal;
+	color:#000;
+	text-transform:none;
+	display:block;
+}
+
+#owl-demo-women .item span.price{
+	margin:0;	/*margin:0 0 20px;*/
+	height:auto;
+	font-size:22px;
+	font-weight:bold;
+	color:#e76332;
+	text-transform:uppercase;
+	display:block;
+}
