@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html><head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>Apparel Layout</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    
+    <style type="text/css">
+		@media all and (min-width:320px)
+		{
+				@supports (-ms-ime-align:auto) {
+					body{
+						background:#f00;
+					}
+				}
+		}
+	</style> 
     <!-- Owl Carousel -->
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.theme.css" />
@@ -19,6 +27,18 @@
     <script type="text/javascript" src="js/html5.js"></script>
     <script type="text/javascript" src="js/modernizr.min.js"></script>
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    
+    <!-- to target EDGE -->
+    <script>
+        // JavaScript to detect Microsoft Edge and load specific CSS file
+        if (navigator.userAgent.indexOf("Edg") !== -1) {
+            var link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.type = "text/css";
+            link.href = "css/edge.css";
+            document.head.appendChild(link);
+        }
+    </script>
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
